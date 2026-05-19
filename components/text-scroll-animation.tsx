@@ -111,7 +111,7 @@ const Skiper31 = () => {
 
   return (
     <ReactLenis root>
-      <main className="w-full bg-white h-[800px]">
+      <main className="w-full bg-white relative">
         {/* Шапка-подсказка */}
         <div className="top-22 absolute left-1/2 z-10 grid -translate-x-1/2 content-start justify-items-center gap-6 text-center text-black">
           <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-[#f5f4f3] after:to-black after:content-['']">
@@ -125,7 +125,7 @@ const Skiper31 = () => {
           className="relative box-border flex h-[120vh] items-center justify-center gap-[2vw] overflow-hidden bg-[#f5f4f3] p-[2vw]"
         >
           <div
-            className="font-geist w-full max-w-4xl text-center text-6xl font-bold uppercase tracking-tighter text-black"
+            className="font-geist w-full max-w-4xl text-center text-6xl font-bold uppercase tracking-tighter text-bold"
             style={{ perspective: "500px" }}
           >
             {characters.map((char, index) => (
