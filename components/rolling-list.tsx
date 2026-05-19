@@ -15,18 +15,15 @@ interface RollingTextItemProps {
 }
 
 const colorClassMap: Record<ListItem["color"], string> = {
-//   red: "text-red-500",
   blue: "text-blue-500",
-//   green: "text-green-500",
-//   yellow: "text-yellow-500",
 };
 
 function RollingTextItem({ item }: RollingTextItemProps) {
   return (
-    <div className="group relative w-full cursor-pointer border-b border-neutral-200 dark:border-neutral-800 py-6">
+    <div className="group relative w-full cursor-pointer select-none border-b border-neutral-200 dark:border-neutral-800 py-6">
       {/* Rolling text */}
       <div className="relative overflow-hidden h-[60px] md:h-20">
-        <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] group-hover:-translate-y-1/2">
+        <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] md:group-hover:-translate-y-1/2 group-active:-translate-y-1/2">
           {/* State 1: Normal */}
           <div className="h-[60px] md:h-20 flex items-center">
             <h2 className="text-4xl md:text-6xl font-bold text-neutral-900 dark:text-white uppercase tracking-tighter">
@@ -49,7 +46,7 @@ function RollingTextItem({ item }: RollingTextItemProps) {
       </div>
 
       {/* Category Label */}
-      <span className="absolute top-8 right-0 text-xs font-bold uppercase tracking-widest text-neutral-400 transition-opacity duration-300 group-hover:opacity-0 hidden md:block">
+      <span className="absolute top-8 right-0 text-xs font-bold uppercase tracking-widest text-neutral-400 transition-opacity duration-300 md:group-hover:opacity-0 group-active:opacity-0 hidden md:block">
         {item.category}
       </span>
 
@@ -59,7 +56,8 @@ function RollingTextItem({ item }: RollingTextItemProps) {
           "pointer-events-none absolute right-0 top-1/2 z-20 h-32 w-48 -translate-y-1/2 overflow-hidden rounded-lg shadow-2xl",
           "transition-all duration-500 ease-out",
           "opacity-0 scale-95 rotate-3 translate-x-4",
-          "group-hover:opacity-100 group-hover:scale-100 group-hover:rotate-0 group-hover:translate-x-0"
+          "md:group-hover:opacity-100 md:group-hover:scale-100 md:group-hover:rotate-0 md:group-hover:translate-x-0",
+          "group-active:opacity-100 group-active:scale-100 group-active:rotate-0 group-active:translate-x-0"
         )}
       >
         <div className="relative h-full w-full">
@@ -67,7 +65,7 @@ function RollingTextItem({ item }: RollingTextItemProps) {
             src={item.src}
             alt={item.alt}
             fill
-            className="object-cover grayscale transition-all duration-500 ease-out group-hover:grayscale-0"
+            className="object-cover grayscale transition-all duration-500 ease-out md:group-hover:grayscale-0 group-active:grayscale-0"
           />
           <div className="absolute inset-0 bg-blue-600/15 mix-blend-overlay" />
         </div>
@@ -90,7 +88,7 @@ function RollingTextList() {
       id: 2,
       title: "Design",
       category: "Experience",
-    src: "/Assets/Work/App-Mos.png",
+      src: "/Assets/Work/App-Mos.png",
       alt: "Design collaboration",
       color: "blue",
     },
@@ -106,16 +104,18 @@ function RollingTextList() {
       id: 4,
       title: "Deploy",
       category: "Launch",
-src: "/Assets/Work/App-Mos.png",      alt: "Product launch",
+      src: "/Assets/Work/App-Mos.png",
+      alt: "Product launch",
       color: "blue",
     },
   ];
 
   return (
     <div className="mx-auto flex w-full flex-col items-center px-20 py-12">
-      <h3 className="mb-8 text-4xl  uppercase tracking-widest text-neutral-500 mb-20 ">
+      <h3 className="mb-20 text-4xl uppercase tracking-widest text-neutral-500">
         Work
       </h3>
+
       <div className="w-full flex flex-col">
         {items.map((item) => (
           <RollingTextItem key={item.id} item={item} />
