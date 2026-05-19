@@ -5,6 +5,7 @@ import ReactLenis from "lenis/react";
 import React, { useRef } from "react";
 import { cn } from "@/lib/utils";
 
+
 type CharacterProps = {
   char: string;
   index: number;
@@ -110,7 +111,7 @@ const Skiper31 = () => {
 
   return (
     <ReactLenis root>
-      <main className="w-full bg-white">
+      <main className="w-full bg-white h-[800px]">
         {/* Шапка-подсказка */}
         <div className="top-22 absolute left-1/2 z-10 grid -translate-x-1/2 content-start justify-items-center gap-6 text-center text-black">
           <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-[#f5f4f3] after:to-black after:content-['']">
@@ -121,7 +122,7 @@ const Skiper31 = () => {
         {/* Блок 1 — текст */}
         <div
           ref={targetRef}
-          className="relative box-border flex h-[210vh] items-center justify-center gap-[2vw] overflow-hidden bg-[#f5f4f3] p-[2vw]"
+          className="relative box-border flex h-[120vh] items-center justify-center gap-[2vw] overflow-hidden bg-[#f5f4f3] p-[2vw]"
         >
           <div
             className="font-geist w-full max-w-4xl text-center text-6xl font-bold uppercase tracking-tighter text-black"
@@ -137,12 +138,13 @@ const Skiper31 = () => {
               />
             ))}
           </div>
+          
         </div>
 
         
-        <div
+        {/* <div
           ref={targetRef2}
-          className="relative -mt-[100vh] box-border flex h-[210vh] flex-col items-center justify-center gap-[2vw] overflow-hidden bg-[#f5f4f3] p-[2vw]"
+          className="relative -mt-[20vh] box-border flex h-[120vh] flex-col items-center justify-center gap-[2vw] overflow-hidden bg-[#f5f4f3] p-[2vw]"
         >
           <p className="font-geist flex items-center justify-center gap-3 text-2xl font-medium tracking-tight text-black">
             <Bracket className="h-12 text-black" />
@@ -161,7 +163,7 @@ const Skiper31 = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Блок 3 — иконки (вариант с поворотом) */}
         {/* <div
@@ -186,6 +188,8 @@ const Skiper31 = () => {
             ))}
           </div>
         </div> */}
+
+      
       </main>
     </ReactLenis>
   );

@@ -1,3 +1,4 @@
+import { DemoOne } from "@/myComponent/FeatureScroll";
 import MyHero from "../myComponent/MyHero";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     
       <main>
        <MyHero/>
+      <DemoOne/>
       </main>
 
 
