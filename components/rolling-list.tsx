@@ -112,7 +112,7 @@ function RollingTextList() {
 
   return (
     <div className="mx-auto flex w-full flex-col items-center px-20 py-12">
-      <h3 className="mb-20 text-4xl uppercase tracking-widest text-neutral-500">
+      <h3 className="mb-20 text-2xl uppercase tracking-widest text-neutral-500">
         Work
       </h3>
 
