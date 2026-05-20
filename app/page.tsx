@@ -12,6 +12,7 @@ import Expert from "@/myComponent/Expert";
 import TextCircle from "@/myComponent/TextCircle";
 import { Loading } from "@/myComponent/Loading";
 import Footer from "@/myComponent/Footer";
+import Hero from "@/myComponent/Parallex";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -70,7 +71,9 @@ export default function Home() {
             <ProjectWork />
             <Expert />
             <TextCircle />
+             <Hero/>
             <Testimonial />
+           
             <Footer/>
 
             <div className="fixed bottom-10 left-0 right-0 w-full z-50">
