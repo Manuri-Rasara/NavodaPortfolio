@@ -6,6 +6,8 @@ import MyAcc from "@/myComponent/MyAcc";
 import { Accordion05 } from "@/components/accordion-05";
 import ProjectWork from "@/myComponent/ProjectWork";
 import Testimonial from "@/myComponent/Testonomials";
+import Expert from "@/myComponent/Expert";
+import TextCircle from "@/myComponent/TextCircle";
 
 export default function Home() {
   return (
@@ -16,7 +18,10 @@ export default function Home() {
          <Accordion05 />
        </div>
         <ProjectWork/>
+        <Expert/>
+        <TextCircle/>
         <Testimonial/>
+        
           <div className="fixed bottom-10 left-0 right-0 w-full z-50">
           <DockNav/>
          </div>
