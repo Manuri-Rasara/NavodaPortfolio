@@ -31,7 +31,7 @@ export default function Hero() {
           <motion.div className="relative h-full w-full" style={{ y }}>
             <Image
               alt="image"
-              className="grayscale-0 brightness-20"
+              className="grayscale-0 brightness-30"
               fill
               src={"/Assets/Navoda2.png"}
               style={{ objectFit: "cover" }}
