@@ -14,7 +14,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     
-      <main>
+      <main className="overflow-x-hidden w-full relative">
        <MyHero/>
        <div className="py-20 bg-[#121212] w-full">
          <Accordion05 />
@@ -29,7 +29,7 @@ export default function Home() {
          </div>
 
 <a
-    href="https://wa.me/94787531134?text=Hello%20Navoda%2C%20I%E2%80%99m%20interested%20in%20your%20design%20I%E2%80%99d%20love%20to%20connect%20and%20discuss%20a%20idea."
+    href="https://wa.me/94716145824?text=Hello%20Navoda%2C%20I%E2%80%99m%20like%20your%20creative%20work"
     target="_blank"
     rel="noreferrer"
     className="fixed bottom-6 right-6 z-[9999] flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform duration-300"

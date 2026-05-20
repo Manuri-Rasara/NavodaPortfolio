@@ -111,7 +111,7 @@ const Skiper31 = () => {
 
   return (
     <ReactLenis root>
-      <main className="w-full bg-white relative">
+      <div className="w-full bg-white relative">
         {/* Шапка-подсказка */}
         <div className="top-22 absolute left-1/2 z-10 grid -translate-x-1/2 content-start justify-items-center gap-6 text-center text-black">
           <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-[#f5f4f3] after:to-black after:content-['']">
@@ -190,7 +190,7 @@ const Skiper31 = () => {
         </div> */}
 
       
-      </main>
+      </div>
     </ReactLenis>
   );
 };

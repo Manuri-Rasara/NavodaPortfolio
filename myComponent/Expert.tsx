@@ -3,7 +3,7 @@ import { LogoCloud } from "@/components/logo-cloud-3";
 
 export default function Expert() {
   return (
-    <div className="h-[400px] w-full place-content-center mb-2 md:mb-5">
+    <div className="relative overflow-hidden h-[400px] w-full place-content-center mb-2 md:mb-5">
     <div
         aria-hidden="true"
         className={cn(
