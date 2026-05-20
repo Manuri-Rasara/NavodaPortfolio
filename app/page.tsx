@@ -28,7 +28,7 @@ export default function Home() {
           <DockNav/>
          </div>
 
-<a
+{/* <a
     href="https://wa.me/94716145824?text=Hello%20Navoda%2C%20I%E2%80%99m%20like%20your%20creative%20work"
     target="_blank"
     rel="noreferrer"
@@ -41,7 +41,7 @@ export default function Home() {
       width={64}
       height={64}
     />
-  </a>
+  </a> */}
       </main>
 
 
