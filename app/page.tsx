@@ -32,7 +32,7 @@ export default function Home() {
     href="https://wa.me/94716145824?text=Hello%20Navoda%2C%20I%E2%80%99m%20like%20your%20creative%20work"
     target="_blank"
     rel="noreferrer"
-    className="fixed bottom-6 right-6 z-[9999] flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+    className="fixed bottom-40 right-6 z-[9999] flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
     aria-label="Open WhatsApp chat"
   >
     <Image
