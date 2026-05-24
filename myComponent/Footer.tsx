@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 export default function Footer() {
 	return (
-		<div className="relative w-full flex min-h-[500px] flex-col items-center justify-center bg-[#ff6900]">
+		<div className="relative w-full flex min-h-[500px] flex-col items-center justify-center bg-[#000000]">
 			<div
 				aria-hidden="true"
 				className={cn(
@@ -16,7 +16,7 @@ export default function Footer() {
 			/>
 
 			<div className="flex w-[70vw] flex-col items-end">
-				<WavePath className="mb-10" />
+				<WavePath className="mb-10 text-white" />
 				<div className="flex w-full flex-col items-end">
 					<div className="flex justify-end">
 						<p className="text-white/80 mt-2 text-sm">hello</p>

@@ -13,8 +13,11 @@ import TextCircle from "@/myComponent/TextCircle";
 import { Loading } from "@/myComponent/Loading";
 import Footer from "@/myComponent/Footer";
 import Hero from "@/myComponent/Parallex";
-import ButtonRow from "@/myComponent/ButtonRow";
+
 import GlitchText from "@/myComponent/GlitchText";
+import { CoolPart } from "@/myComponent/CoolPart";
+
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +33,7 @@ export default function Home() {
   return (
     <>
       <AnimatePresence mode="wait">
+   
         {loading ? (
           <motion.div
             key="loader"
@@ -75,6 +79,7 @@ export default function Home() {
             <TextCircle />
              <Hero/>
              <GlitchText/>
+  <CoolPart/>
             
             <Testimonial />
            

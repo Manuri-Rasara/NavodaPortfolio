@@ -41,12 +41,12 @@ const Card: FC<iCardProps> = ({
 			<div
 				className="relative flex flex-col h-[300px] w-[700px] py-12 px-10 md:px-12
 				rotate-0 md:h-[400px] md:w-[600px] items-center justify-center mx-auto 
-				 pr-3 pl-3 pt-3 pb-4"
+				shadow-md pr-3 pl-3 pt-3 pb-4"
 				style={{backgroundColor: color}}
 			>
 				<span className="font-bold relative text-5xl md:text-7xl mt-5">
 					<span
-						className="relative z-10 font-geist font-black tracking-tight"
+						className="relative z-10 font-tiemposHeadline font-black tracking-tight"
 						style={{color: textColor}}
 					>
 						{title}
@@ -59,10 +59,12 @@ const Card: FC<iCardProps> = ({
 					{description}
 				</div>
 				<div className="absolute inset-0 z-0">
-					<div
-	className="absolute inset-0"
-	style={{ backgroundColor: color }}
-/>
+					<Image
+						className="w-full h-full object-cover"
+						src={src}
+						alt="Background"
+						layout="fill"
+					/>
 				</div>
 			</div>
 		</div>
