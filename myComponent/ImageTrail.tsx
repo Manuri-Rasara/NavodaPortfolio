@@ -6,18 +6,17 @@ import { ImageTrail } from "@/components/ui/image-trail"
 const ImageTrailDemo = () => {
   const ref = useRef<HTMLDivElement>(null)
 
-  // Unsplash images that definitely exist
- const images = [
+  const images = [
     "/Assets/ImageTrail/Img123.webp",
-   "/Assets/ImageTrail/IMG124.webp",
-  "/Assets/ImageTrail/Img125.webp",
-  "/Assets/ImageTrail/Img126.webp",
-  "/Assets/ImageTrail/Img127.jpg",
+    "/Assets/ImageTrail/IMG124.webp",
+    "/Assets/ImageTrail/Img125.webp",
+    "/Assets/ImageTrail/Img126.webp",
+    "/Assets/ImageTrail/Img127.jpg",
   ]
 
   return (
-    <div className="flex w-full h-screen justify-center items-center relative overflow-hidden">
-      <div className="absolute top-0 left-0 z-0" ref={ref}>
+    <div className="flex w-full h-screen justify-center items-center relative overflow-hidden" ref={ref}>
+      <div className="absolute top-0 left-0 z-0">
         <ImageTrail containerRef={ref}>
           {images.map((url, index) => (
             <div
