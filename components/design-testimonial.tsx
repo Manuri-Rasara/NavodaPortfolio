@@ -15,7 +15,7 @@ const testimonials = [
   {
     quote: "I supervised Navoda as an intern at ICTA, where she contributed to key government digital assessment tools.She showed strong UI design skills, quick learning ability, and a proactive attitude despite being a beginner.She is dedicated, eager to grow, and I confidently recommend her for future roles.",
     author: "Kanishka Vithana",
-    role: "Certified Project Manager",
+    role: "Project Manager",
     company: "ICTA",
   },
  
