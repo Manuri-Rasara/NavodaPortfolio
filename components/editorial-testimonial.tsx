@@ -79,7 +79,7 @@ export default function TestimonialsEditorial() {
               className="
                 text-[72px]
                 sm:text-[100px]
-                md:text-[140px]
+                md:text-[160px]
                 font-light
                 leading-none
                 text-foreground/10
@@ -101,7 +101,7 @@ export default function TestimonialsEditorial() {
               className={`
                 text-lg
                 sm:text-2xl
-                md:text-4xl
+                md:text-5xl
                 font-light
                 leading-relaxed
                 tracking-tight

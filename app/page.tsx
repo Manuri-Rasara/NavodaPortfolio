@@ -17,6 +17,7 @@ import Hero from "@/myComponent/Parallex";
 import GlitchText from "@/myComponent/GlitchText";
 
 import FeatureGrid from "@/myComponent/FeatureGrid";
+import { ImageTrailDemo } from "@/myComponent/ImageTrail";
 
 
 
@@ -83,7 +84,7 @@ export default function Home() {
 <FeatureGrid/>
             
             <Testimonial />
-           
+           <ImageTrailDemo/>
             <Footer/>
 
             <div className="fixed bottom-10 left-0 right-0 w-full z-50">
