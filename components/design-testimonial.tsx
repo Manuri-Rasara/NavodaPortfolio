@@ -129,7 +129,7 @@ export function Testimonial() {
               <AnimatePresence mode="wait">
                 <motion.blockquote
                   key={activeIndex}
-                  className="text-2xl md:text-2xl font-light text-foreground leading-[1.15] tracking-tight"
+                  className="text-xl md:text-2xl font-light text-foreground leading-[1.15] tracking-tight"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
@@ -194,7 +194,7 @@ export function Testimonial() {
               <div className="flex items-center gap-4">
                 <motion.button
                   onClick={goPrev}
-                  className="group relative w-12 h-12 rounded-full border border-border flex items-center justify-center overflow-hidden"
+                  className="group relative md:w-12 md:h-12 w-8 h-8 rounded-full border border-border flex items-center justify-center overflow-hidden"
                   whileTap={{ scale: 0.95 }}
                 >
                   <motion.div
