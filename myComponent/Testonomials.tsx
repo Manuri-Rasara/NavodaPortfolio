@@ -2,7 +2,7 @@ import { Testimonial } from "@/components/design-testimonial"
 
 export default function Page() {
   return (
-    <main className="min-h-screen flex items-center justify-center  w-full">
+    <main className="min-h-screen flex items-center justify-center w-full px-10">
       <Testimonial />
     </main>
   )
