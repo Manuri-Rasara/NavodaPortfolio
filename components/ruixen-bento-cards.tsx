@@ -88,7 +88,7 @@ const PlusIcon = ({ className }: { className?: string }) => (
 
 export default function RuixenBentoCards() {
   return (
-    <section className="dark:bg-black dark:bg-transparent mx-20 mt-50 ">
+    <section className="dark:bg-black dark:bg-transparent mx-10 md:mx-20 md:mt-50 mt-25 ">
       <div className="mx-auto container px-4">
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 auto-rows-auto gap-4">
