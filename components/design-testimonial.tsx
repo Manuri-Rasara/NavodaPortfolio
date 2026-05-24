@@ -221,7 +221,7 @@ export function Testimonial() {
 
                 <motion.button
                   onClick={goNext}
-                  className="group relative w-12 h-12 rounded-full border border-border flex items-center justify-center overflow-hidden"
+                  className="group relative md:w-12 md:h-12 w-8 h-8 rounded-full border border-border flex items-center justify-center overflow-hidden"
                   whileTap={{ scale: 0.95 }}
                 >
                   <motion.div
