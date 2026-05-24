@@ -19,6 +19,7 @@ import GlitchText from "@/myComponent/GlitchText";
 import FeatureGrid from "@/myComponent/FeatureGrid";
 import { ImageTrailDemo } from "@/myComponent/ImageTrail";
 import ButtonRow from "@/myComponent/ButtonRow";
+import { Process } from "@/myComponent/ContactMe";
 
 
 
@@ -71,7 +72,7 @@ export default function Home() {
               duration: 1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="overflow-x-hidden w-full relative"
+            className="overflow-x-clip w-full relative"
           >
             <MyHero />
 
@@ -83,7 +84,7 @@ export default function Home() {
             <Expert />
             <TextCircle />
              <Hero/>
-              
+              <Process/>
              <GlitchText/>
          
 <FeatureGrid/>
