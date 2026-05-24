@@ -129,7 +129,7 @@ export function Testimonial() {
               <AnimatePresence mode="wait">
                 <motion.blockquote
                   key={activeIndex}
-                  className="text-xl md:text-2xl font-light text-foreground leading-[1.15] tracking-tight"
+                  className="text-xl md:text-2xl font-light text-foreground leading-[1.15] tracking-tight w-4/5"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
