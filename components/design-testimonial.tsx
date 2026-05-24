@@ -191,7 +191,7 @@ export function Testimonial() {
               </AnimatePresence>
 
               {/* Navigation */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 md:flex hidden">
                 <motion.button
                   onClick={goPrev}
                   className="group relative md:w-12 md:h-12 w-8 h-8 rounded-full border border-border flex items-center justify-center overflow-hidden"
