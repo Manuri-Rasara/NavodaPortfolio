@@ -17,6 +17,9 @@ export function TextGlitch({ text, hoverText, href, className = "", delay = 0 }:
   const [displayHoverText, setDisplayHoverText] = useState(hoverText || text)
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
   const hoverIntervalRef = useRef<NodeJS.Timeout | null>(null)
+  // ↓ NEW
+  const autoLoopRef = useRef<NodeJS.Timeout | null>(null)
+  const isMobileRef = useRef(false)
 
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -52,6 +55,43 @@ export function TextGlitch({ text, hoverText, href, className = "", delay = 0 }:
 
     loadGSAP()
   }, [delay])
+
+  // ↓ NEW — detect mobile & start auto-loop
+  useEffect(() => {
+    if (!hoverText) return
+
+    isMobileRef.current =
+      window.matchMedia("(hover: none) and (pointer: coarse)").matches
+
+    if (!isMobileRef.current) return
+
+    const runCycle = () => {
+      // open
+      handleMouseEnter()
+      if (spanRef.current) {
+        spanRef.current.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+      }
+
+      // close after 1.4s
+      autoLoopRef.current = setTimeout(() => {
+        handleMouseLeave()
+        if (spanRef.current) {
+          spanRef.current.style.clipPath = "polygon(0 50%, 100% 50%, 100% 50%, 0 50%)"
+        }
+
+        // next cycle after 1.2s pause
+        autoLoopRef.current = setTimeout(runCycle, 1200)
+      }, 1400)
+    }
+
+    // first trigger respects the stagger delay
+    autoLoopRef.current = setTimeout(runCycle, delay * 1000 + 600)
+
+    return () => {
+      if (autoLoopRef.current) clearTimeout(autoLoopRef.current)
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hoverText, delay])
 
   const handleMouseEnter = () => {
     if (hoverText) {
@@ -100,12 +140,9 @@ export function TextGlitch({ text, hoverText, href, className = "", delay = 0 }:
 
   useEffect(() => {
     return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current)
-      }
-      if (hoverIntervalRef.current) {
-        clearInterval(hoverIntervalRef.current)
-      }
+      if (intervalRef.current) clearInterval(intervalRef.current)
+      if (hoverIntervalRef.current) clearInterval(hoverIntervalRef.current)
+      if (autoLoopRef.current) clearTimeout(autoLoopRef.current) // ↓ NEW cleanup
     }
   }, [])
 
@@ -125,7 +162,7 @@ export function TextGlitch({ text, hoverText, href, className = "", delay = 0 }:
     <h1
       ref={textRef}
       className={`
-        text-[8vw] font-bold leading-none tracking-tight m-0 
+        text-[12vw] md:text-[8vw] font-bold leading-none tracking-tight m-0 
         text-neutral-600/20
         bg-gradient-to-r from-neutral-700 to-neutral-500 bg-clip-text bg-no-repeat
         border-b border-neutral-600/20
