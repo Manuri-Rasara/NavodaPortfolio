@@ -1,7 +1,9 @@
 "use client";
+import ButtonWithIconDemo from "@/components/button-witn-icon";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import { useRef } from "react";
+import CVDownload from "./CVDownload";
 
 export default function Hero() {
   const container = useRef<HTMLDivElement>(null);
@@ -18,15 +20,25 @@ export default function Hero() {
         ref={container}
         style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
       >
-        <div className="relative z-10 flex h-full w-full flex-col justify-between p-20 text-white mix-blend-difference">
-          {/* <p className="w-[50vw] self-end text-[2vw] uppercase mix-blend-difference">
-            Beauty and quality need the right time to be conceived and realised
-            even in a world that is in too much of a hurry.
-          </p> */}
-          <p className="text-xl uppercase mix-blend-difference">
-            Navoda Rajapaksha
-          </p>
+        <div className="relative z-10 flex h-full w-full flex-col justify-between p-20 text-white">
+         <div className="flex flex-col gap-5">
+          <div className="text-xl uppercase mix-blend-difference">
+            Navoda Rajapaksha 
+          
+          </div>
+          <div className="">
+          <CVDownload/>
+          </div>
+          </div>
+          <div className="flex justify-end ">
+          <ButtonWithIconDemo/>
+          
+
+          </div>
+          
+
         </div>
+      
         <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
           <motion.div className="relative h-full w-full" style={{ y }}>
             <Image

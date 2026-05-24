@@ -1,11 +1,12 @@
-import RotateButton from "./ButtonRotate";
-import GetinTouch from "./GetinTouch";
+import ButtonWithIconDemo from "@/components/button-witn-icon";
+
+
 
 
 export default function ButtonRow() {
   return (
     <main >
-     <GetinTouch/>
+    <ButtonWithIconDemo/>
  
     </main>
   )

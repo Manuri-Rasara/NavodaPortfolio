@@ -1,9 +1,9 @@
-import TestimonialsEditorial from "@/components/editorial-testimonial"
+import { Testimonial } from "@/components/design-testimonial"
 
-export default function Testimonial() {
+export default function Page() {
   return (
-    <div className="min-h-screen flex items-center justify-center  p-8 w-full">
-      <TestimonialsEditorial />
-    </div>
+    <main className="min-h-screen flex items-center justify-center  w-full">
+      <Testimonial />
+    </main>
   )
 }

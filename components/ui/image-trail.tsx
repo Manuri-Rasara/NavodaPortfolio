@@ -111,7 +111,7 @@ const ImageTrail = ({
   })
 
   return (
-    <div className="relative w-full h-full pointer-events-none">
+    <div className="relative w-full h-[800px] pointer-events-none">
       {trailRef.current.map((item) => (
         <TrailItem key={item.id} item={item} onComplete={removeFromTrail} />
       ))}

@@ -18,6 +18,9 @@ import GlitchText from "@/myComponent/GlitchText";
 
 import FeatureGrid from "@/myComponent/FeatureGrid";
 import { ImageTrailDemo } from "@/myComponent/ImageTrail";
+import ButtonRow from "@/myComponent/ButtonRow";
+
+
 
 
 
@@ -80,8 +83,10 @@ export default function Home() {
             <Expert />
             <TextCircle />
              <Hero/>
+              
              <GlitchText/>
-<FeatureGrid/>
+         
+
             
             <Testimonial />
            <ImageTrailDemo/>

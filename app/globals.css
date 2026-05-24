@@ -83,7 +83,14 @@
     }
   }
   --color-destructive-foreground: var(--destructive-foreground)
-}
+;
+  @keyframes right {
+  0% {
+    transform: translateX(calc(100% + .375rem));}
+  50% {
+    transform: translateX(calc(100% + .375rem + 0.25rem));}
+  100% {
+    transform: translateX(calc(100% + .375rem));}}}
 
 :root {
   --background: oklch(1 0 0);
