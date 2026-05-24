@@ -7,8 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const testimonials = [
   {
     id: 1,
-    quote:
-      "The attention to detail and creative vision transformed our brand identity completely.",
+    quote:"Sample",
     author: "Sarah Chen",
     role: "Creative Director",
     company: "Studio Forma",

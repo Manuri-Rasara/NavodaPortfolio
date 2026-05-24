@@ -13,6 +13,8 @@ import TextCircle from "@/myComponent/TextCircle";
 import { Loading } from "@/myComponent/Loading";
 import Footer from "@/myComponent/Footer";
 import Hero from "@/myComponent/Parallex";
+import ButtonRow from "@/myComponent/ButtonRow";
+import GlitchText from "@/myComponent/GlitchText";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -72,6 +74,8 @@ export default function Home() {
             <Expert />
             <TextCircle />
              <Hero/>
+             <GlitchText/>
+            
             <Testimonial />
            
             <Footer/>
