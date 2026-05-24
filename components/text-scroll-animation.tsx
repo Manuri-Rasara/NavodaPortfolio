@@ -89,8 +89,8 @@ const Skiper31 = () => {
   const targetRef3 = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({ target: targetRef });
-  const { scrollYProgress: scrollYProgress2 } = useScroll({ target: targetRef2 });
-  const { scrollYProgress: scrollYProgress3 } = useScroll({ target: targetRef3 });
+  // const { scrollYProgress: scrollYProgress2 } = useScroll({ target: targetRef2 });
+  // const { scrollYProgress: scrollYProgress3 } = useScroll({ target: targetRef3 });
 
   
   const text = "Navoda";

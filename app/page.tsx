@@ -15,7 +15,8 @@ import Footer from "@/myComponent/Footer";
 import Hero from "@/myComponent/Parallex";
 
 import GlitchText from "@/myComponent/GlitchText";
-import { CoolPart } from "@/myComponent/CoolPart";
+
+import FeatureGrid from "@/myComponent/FeatureGrid";
 
 
 
@@ -79,7 +80,7 @@ export default function Home() {
             <TextCircle />
              <Hero/>
              <GlitchText/>
-  <CoolPart/>
+<FeatureGrid/>
             
             <Testimonial />
            
