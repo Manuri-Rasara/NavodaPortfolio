@@ -16,7 +16,7 @@ const ImageTrailDemo = () => {
   ]
 
   return (
-    <div className="flex w-full h-screen justify-center items-center relative overflow-hidden">
+    <div className="flex w-full h-[300px] md:h-screen justify-center items-center relative overflow-hidden">
       <div className="absolute top-0 left-0 z-0" ref={ref}>
         <ImageTrail containerRef={ref}>
           {images.map((url, index) => (

@@ -130,7 +130,7 @@ const Icons = {
 // === Main Component ===
 export default function MouseTrailDemo() {
   return (
-    <section className="relative z-10 grid place-content-center gap-12 px-8 py-24 text-neutral-800 dark:text-neutral-100 mb-10">
+    <section className="relative z-10 grid place-content-center gap-12 px-8 py-24 text-neutral-800 dark:text-neutral-100 mb-0 md:mb-10">
       {/* 1st link → icon left */}
       <div className="group flex items-center justify-center gap-6 transition-all duration-300 hover:gap-8">
         {/* <div className="transition-transform duration-500 group-hover:translate-x-2">
