@@ -128,6 +128,7 @@ export default function Page() {
       ) : (
         <div
           style={{
+            background: "#121212",
             width: "100vw",
             height: "100vh",
             position: "relative",
@@ -155,7 +156,7 @@ export default function Page() {
               padding: "10px 12px",
               borderRadius: 999,
               background: "rgba(0,0,0,0.65)",
-              color: "#fff",
+              color: "#000000ff",
               zIndex: 10,
             }}
           >
@@ -165,9 +166,9 @@ export default function Page() {
                 width: 32,
                 height: 32,
                 borderRadius: "50%",
-                border: "1px solid rgba(255,255,255,0.4)",
+                border: "1px solid rgba(15, 15, 15, 0.4)",
                 background: "rgba(0,0,0,0.6)",
-                color: "#fff",
+                color: "#000000ff",
                 fontSize: 22,
                 cursor: "pointer",
                 display: "grid",
