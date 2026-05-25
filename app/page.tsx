@@ -20,6 +20,7 @@ import FeatureGrid from "@/myComponent/FeatureGrid";
 import { ImageTrailDemo } from "@/myComponent/ImageTrail";
 import ButtonRow from "@/myComponent/ButtonRow";
 import { Process } from "@/myComponent/ContactMe";
+import GalleryDirectBTN from "@/myComponent/GalleryDirectBTN";
 
 
 
@@ -90,6 +91,7 @@ export default function Home() {
 <FeatureGrid/>
             
             <Testimonial />
+            <GalleryDirectBTN/>
            <ImageTrailDemo/>
             <Footer/>
 

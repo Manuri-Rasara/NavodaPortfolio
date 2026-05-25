@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { motion } from "framer-motion"
+import { ArrowBigDown, ArrowDown, ArrowDownFromLine, ArrowDownToDot, FileUser, Notebook } from "lucide-react"
 
 export default function AnimatedDownloadButton() {
   const [isHovered, setIsHovered] = React.useState(false)
@@ -19,7 +20,7 @@ export default function AnimatedDownloadButton() {
         onHoverStart={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
         transition={{ duration: 0.3 }}
-        className="bg-blue-600 flex items-center justify-center overflow-hidden relative"
+        className="bg-blue-400 flex items-center justify-center overflow-hidden relative"
         style={{ borderRadius: 32 }}
       >
         <motion.div
@@ -30,7 +31,7 @@ export default function AnimatedDownloadButton() {
           }}
           transition={{ duration: 0.2 }}
         >
-          <span className="text-white text-2xl">↓</span>
+          <span className="text-white text-2xl"><ArrowDown/></span>
         </motion.div>
 
         <motion.div
