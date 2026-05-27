@@ -12,8 +12,7 @@ const items = [
     id: "1",
     title: "Who am I?",
     content:
-      "I’m Ali Imam — a designer and creative developer focused on building digital experiences that are minimal, meaningful, and timeless.",
-  },
+"I design experiences that feel effortless, human, and alive.Blending UI/UX strategy with bold visual storytelling to create products people remember. :)"  },
   {
     id: "2",
     title: "What do I design?",
@@ -24,8 +23,7 @@ const items = [
     id: "3",
     title: "My design approach",
     content:
-      "For me, design isn’t just visuals — it’s how something feels and works. I focus on clarity, detail, and storytelling in every project.",
-  },
+"I believe design should speak before words do.Every color, motion, and detail is intentional — built to guide, inspire, and simplify. ✨ :)"  },
   {
     id: "4",
     title: "Beyond design",
@@ -40,21 +38,20 @@ const items = [
   },
   {
     id: "6",
-    title: "Who I work with",
+    title: "Beyond design",
     content:
-      "I collaborate with startups, brands, and individuals who value thoughtful design and want to create lasting impact.",
-  },
+"Outside the screen, I explore creativity through music, photography, culture, and everyday moments.Inspiration lives in everything around us."  },
   {
     id: "7",
     title: "My toolkit",
     content:
-      "Figma, Next.js, and modern frameworks are part of my process — but for me, tools always serve the idea, not the other way around.",
+    "Figma, Adobe XD, prototyping,Illustrator,photoshop visual systems, branding, and a mindset focused on clarity + creativity."
   },
   {
     id: "8",
-    title: "Let’s connect",
+    title: "Why me?",
     content:
-      "You can reach me through contact@aliimam.in or on social platforms. I’m always open to new projects, collaborations, and conversations.",
+    "Creative vision. User-first thinking. Attention to detail. Flexible team collaboration. Designs that look premium and feel effortless."
   },
 ];
 

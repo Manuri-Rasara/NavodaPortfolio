@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ListItem {
   id: number;
@@ -8,6 +9,10 @@ interface ListItem {
   src: string;
   alt: string;
   color: "blue";
+  link: {
+    href: string;
+    target?: "_blank" | "_self";
+  };
 }
 
 interface RollingTextItemProps {
@@ -20,10 +25,15 @@ const colorClassMap: Record<ListItem["color"], string> = {
 
 function RollingTextItem({ item }: RollingTextItemProps) {
   return (
-    <div className="group relative w-full cursor-pointer select-none border-b border-neutral-200 dark:border-neutral-800 py-6">
+    <Link
+      href={item.link.href}
+      target={item.link.target}
+      className="group relative w-full cursor-pointer select-none border-b border-neutral-200 dark:border-neutral-800 py-6 block"
+    >
       {/* Rolling text */}
       <div className="relative overflow-hidden h-[60px] md:h-20">
         <div className="transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] md:group-hover:-translate-y-1/2 group-active:-translate-y-1/2">
+          
           {/* State 1: Normal */}
           <div className="h-[60px] md:h-20 flex items-center">
             <h2 className="text-4xl md:text-6xl font-bold text-neutral-900 dark:text-white uppercase tracking-tighter">
@@ -31,7 +41,7 @@ function RollingTextItem({ item }: RollingTextItemProps) {
             </h2>
           </div>
 
-          {/* State 2: Hover (Italic + Color) */}
+          {/* State 2: Hover */}
           <div className="h-[60px] md:h-20 flex items-center">
             <h2
               className={cn(
@@ -42,6 +52,7 @@ function RollingTextItem({ item }: RollingTextItemProps) {
               {item.title}
             </h2>
           </div>
+
         </div>
       </div>
 
@@ -70,7 +81,7 @@ function RollingTextItem({ item }: RollingTextItemProps) {
           <div className="absolute inset-0 bg-blue-600/15 mix-blend-overlay" />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -83,6 +94,10 @@ function RollingTextList() {
       src: "/Assets/Work/App-Mos.png",
       alt: "Team discovering insights",
       color: "blue",
+      link: {
+        href: "/Project1",
+        target: "_self",
+      },
     },
     {
       id: 2,
@@ -91,6 +106,10 @@ function RollingTextList() {
       src: "/Assets/Work/App-Mos.png",
       alt: "Design collaboration",
       color: "blue",
+      link: {
+        href: "/Project1",
+        target: "_self",
+      },
     },
     {
       id: 3,
@@ -99,6 +118,10 @@ function RollingTextList() {
       src: "/Assets/Work/App-Mos.png",
       alt: "Developers coding",
       color: "blue",
+      link: {
+        href: "/Project1",
+        target: "_self",
+      },
     },
     {
       id: 4,
@@ -107,6 +130,10 @@ function RollingTextList() {
       src: "/Assets/Work/App-Mos.png",
       alt: "Product launch",
       color: "blue",
+      link: {
+        href: "/Project1",
+        target: "_self",
+      },
     },
   ];
 
