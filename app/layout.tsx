@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://navoda-portfolio-sepia.vercel.app/preview.png",
+        url: "https://navoda-portfolio-sepia.vercel.app/previewImage.png",
         width: 1200,
         height: 630,
         alt: "Navoda Rajapaksha Preview",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Navoda Rajapaksha",
     description: "Premium UI/UX & Graphic Design Experience",
     images: [
-      "https://navoda-portfolio-sepia.vercel.app/preview.png",
+      "https://navoda-portfolio-sepia.vercel.app/previewImage.png",
     ],
   },
 };
