@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Navoda",
   description: "Premium UI/UX & Graphic Design Experience",
 
@@ -25,18 +25,28 @@ export const metadata = {
     description: "Premium UI/UX & Graphic Design Experience",
     url: "https://navoda-portfolio-sepia.vercel.app/",
     siteName: "Navoda Rajapaksha",
+
     images: [
       {
-        url: "/preview.png",
+        url: "https://navoda-portfolio-sepia.vercel.app/preview.png",
         width: 1200,
         height: 630,
         alt: "Navoda Rajapaksha Preview",
       },
     ],
+
+    locale: "en_US",
     type: "website",
   },
 
-  
+  twitter: {
+    card: "summary_large_image",
+    title: "Navoda Rajapaksha",
+    description: "Premium UI/UX & Graphic Design Experience",
+    images: [
+      "https://navoda-portfolio-sepia.vercel.app/preview.png",
+    ],
+  },
 };
 
 export default function RootLayout({
