@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/preview-v2.png",
+        url: "/preview-v2.jpg",
         width: 1200,
         height: 630,
         alt: "Navoda Rajapaksha Preview",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Navoda Rajapaksha",
     description: "Premium UI/UX & Graphic Design Experience",
 
-    images: ["/preview-v2.png"],
+    images: ["/preview-v2.jpg"],
   },
 
 };
